@@ -1,12 +1,11 @@
 import React from 'react';
 import Directory from '../../component/Directory';
+import './styles.scss'
 
 const Homepage = props => {
     return (
-        <section>
-            <h1>
+        <section className='homepage'>
                 <Directory />
-            </h1>
         </section>
     )
 }
