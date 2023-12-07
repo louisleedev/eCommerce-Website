@@ -10,29 +10,38 @@ import MainLayout from './layouts/MainLayout';
 import HomepageLayout from './layouts/HomepageLayout';
 import Homepage from './pages/Homepage';
 import Registration from './pages/Registration';
+import Login from './pages/Login';
 
 function App() {
   return (
     <div className="App">
-        <Routes>
-          <Route
-            exact
-            path="/"
-            element={
-              <HomepageLayout>
-                <Homepage/>
-              </HomepageLayout>
-            }
-          />
-          <Route
-            path="/registration"
-            element={
-              <MainLayout>
-                <Registration />
-              </MainLayout>
-            }
-          />
-        </Routes>
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <HomepageLayout>
+              <Homepage />
+            </HomepageLayout>
+          }
+        />
+        <Route
+          path="/registration"
+          element={
+            <MainLayout>
+              <Registration />
+            </MainLayout>
+          }
+        />
+        <Route
+          path="/login"
+          element={
+            <MainLayout>
+              <Login />
+            </MainLayout>
+          }
+        />
+      </Routes>
     </div>
   );
 }
