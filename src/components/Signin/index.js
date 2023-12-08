@@ -6,7 +6,7 @@ const SignIn = props => {
     <div className='signin'>
         <div className='wrap'>
             <h2>
-                LogIn
+                Login
             </h2>
         </div>
     </div>
